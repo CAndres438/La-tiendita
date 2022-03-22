@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/comp.css">
+    <link rel="stylesheet" href="./Styles/modal.css">
+    <link rel="stylesheet" href="./Styles/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Tiendita</title>
+</head>
+
+<body>
+    <!-- Estructura de inicio -->
+
+                        <header>
+<!-- menu -->
+                            <nav class="navbar">
+                                <div class="container-nav container-fluid">
+                                    <div class="container-logo-nav">
+                                        <a href="#"><img
+                                                src="https://res.cloudinary.com/daalu/image/upload/v1647544732/Recursos.Fresh/RecursosDaalu/Tiendita_hrwtwo.png" /></a>
+                                    </div>
+                                    
+                                    <div class="container-botones-nav">
+                                        <button type="button" class="btn-ubicacion" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            id="btnUbicacion">
+                                            <img src="https://res.cloudinary.com/daalu/image/upload/v1647466414/Recursos.Fresh/RecursosDaalu/Ubicacion_ajgnw7.svg"
+                                                alt="logo de ubicación" class="icon">
+                                            <p class="Body-1-Bold" id="textUbicacion">Selecciona tu ubicación</p>
+                                        </button>
+                        
+<!-- Modal ubicación-->
+                                        <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="Headline-3" id="exampleModalLabel">Ubicación</h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h1 class="Headline-1" id="titulo-modal">¿Donde quieres recibir tu pedido?</h1>
+                                                        <p>Para poder ofrecerte productos dentro de tu área, necesitamos tu dirección</p>
+                                                        <form id="formUbicacion">
+                                                            <div class="select-contenedor">
+                                                                <div class="icon-contenedor">
+                                                                    <img class="icon"
+                                                                        src="https://res.cloudinary.com/daalu/image/upload/v1647466414/Recursos.Fresh/RecursosDaalu/Ubicacion_ajgnw7.svg"
+                                                                        alt="oo">
+                                                                </div>
+                                                                <select name="selectUbicacion" id="selectUbicacion">
+                        
+                                                                    <img class="icon"
+                                                                        src="https://res.cloudinary.com/daalu/image/upload/v1647466414/Recursos.Fresh/RecursosDaalu/Cart_vskj3r.svg"
+                                                                        alt="uuu">
+                                                                    <option value="none" selected disabled>
+                                                                        <img class="icon" src="" alt="Icono de un carrito">
+                                                                        Selecciona tu ubicación
+                                                                    </option>
+                                                                    <option value="Bogotá" selected>
+                                                                        Bogotá - Cundinamarca
+                                                                    </option>
+                                                                    <option value="Medellín">
+                                                                        Medellín - Antioquia
+                                                                    </option>
+                                                                    <option value="Cali">
+                                                                        Cali - Valle del Cauca
+                                                                    </option>
+                                                                    <option value="Barranquilla">
+                                                                        Barranquilla - Atlántico
+                                                                    </option>
+                                                                    <option value="Cartagena">
+                                                                        Cartagena de Indias - Bolívar
+                                                                    </option>
+                                                                    <option value="Fusagasugá">
+                                                                        Fusagasugá - Cundinamarca
+                                                                    </option>
+                                                                    <option value="Bello">
+                                                                        Bello - Antioquia
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="cont-formBtn">
+                                                                <button type="submit" class="btn" id="btn-modal-ubicacion"
+                                                                    data-bs-dismiss="modal" aria-label="Close">Donde lo quieres?</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+<!-- boton carrito de compras -->
+                                        <button type="button" id="btnModalCarrito" class="btn" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <img src="https://res.cloudinary.com/daalu/image/upload/v1647550613/Recursos.Fresh/RecursosDaalu/Icons_1_c842lc.svg"
+                                                alt="Esta es la imagen de un carrito" class="icon" id="Shop">
+                                                <span class="carrito__total" id="cartT"></span>
+                                        </button>
+                        
+<!-- offcanvas carrito de compras-->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                            aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <div class="textHeaderCarrito">
+                                                    <h5 class="Body-1-Regular" id="offcanvasRightLabel"></h5>
+                                                    <h5 class="Body-1-Bold" id="textUbicacionCarrito"></h5>
+                                                </div>
+                                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close" id="rein"></button>
+                                            </div>
+                        
+<!-- contenido del carrito -->
+                                            <div class="offcanvas-body offcanvas-body-carrito">
+                                                <div id="contenido-carrito">
+                        
+                                                    <table class="table text-center">
+                        
+                                                        <tbody>
+                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="modal-footer modal-footer-carrito">
+                                                <button type="button" class="btn-outline-danger" id="btnVaciarCarrito">Vaciar Canasta</button>
+                                                <button type="button" class="btn" id="btnPagar" data-dismiss="modal"><span class="carrito__total1" id="cartT2"></span>Ir a Pagar<span class="carrito__total2" id="cartT3"></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                </div>
+                        
+                                </div>
+                            </nav>
+                        </header>
+
+
+                        <main id="index-main">
+                            
+                            <div class="container-fluid">
+                    
+                                <!-- banner -->
+                                <section class="section section-banner">
+                                    <div id="alert"></div>
+                                    <div class="banner">
+                                        <div class="texto-banner">
+                                            <img src="https://res.cloudinary.com/daalu/image/upload/v1647465051/Recursos.Fresh/RecursosDaalu/banner_vrptde.png" alt="imagen-alternativo">
+                                            <h1 class="Texto-1-Banner">¡Adquiere todos tus productos favoritos al mejor precio!</h1>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+
+
+    
+<!-- División exclusiva para colocar los offers -->
+                        <section class="section section-offers" id="section-offers">
+                            <div class="container-offers">
+                                <h3 class="Titulo_3">Ofertas</h3>
+                        
+<!-- Ofertas! -->
+                                <div class="cards-container" id="Offers">
+                        
+                                    <div id="container-modal-offers"></div>
+                                </div>
+                            </div>
+                        </section>
+                        
+<!-- División exclusiva para colocar los populars -->
+                        <section class="section section-populars" id="section-populars">
+                            <div class="container-populars">
+                                <h3 class="Titulo_3">Los más populares</h3>
+                        
+<!-- Populares-->
+                                <div class="cards-container" id="Populars">
+                        
+                                    <div id="container-modal-populars"></div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+
+
+                        <section class="section section-modal-detalles">
+ <!-- Modal de ofertas-->
+                            <div class="modal fade" id="modalDetalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id="modal-body">
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+
+        </div>
+</main>
+                
+
+<script src="./scripts/main.js" type="module"></script>
+<script src="./scripts/detail.js"></script>
+<script src="./scripts/cart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+:root {
+    --White: #FEFEFE;
+    --Silver: #BDBCBC;
+    --Cocoa-Brown: #332927;
+    --Scarlet: #FF1F18;
+    --Orange: #FC462D;
+    --Cobalt: #0252BC;
+    --Black: #333333;
+    --Bg: #FAFAF8;
+    --Boulder:#B8B4B4;
+    --Malachite: #0AC763;
+    --B-H: #078140;
+    --Purple-bg:  #F0E3FE;
+    --Purple: #5E18BB;
+}
+
+/*Para sección de show data*/
+
+.Titulo_3 {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: var(--Black);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 170px;
+    height: auto;
+    left: 0;
+    top: 0;
+    background: var(--White);
+    border: none!important;
+    margin: 0px 20px;
+    position: static;
+}
+.card .porcent{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px;
+    position: static;
+    width: 60px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    border-radius: 16px;
+    background: var(--Purple-bg);
+}
+.card-img {
+    width: 160px!important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+}
+.card .description {
+    height: 100px;
+}
+.card .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 100%;
+    height: 40px;
+}
+.Porc {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--Purple);
+}
+.card-img {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+}
+.B-1 {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 1px;
+}
+.Normal-1 {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.Normal-1-1{
+    font-size: 10px;
+    font-style: normal;
+    color:var(--Boulder);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-top: 45px;
+    text-align: left; 
+}
+.B-2 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: bold;
+
+}
+.Normal-2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--Black);
+    font-weight: 400;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 1px;
+}
+.btn {
+    background: var(--Malachite)!important;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: flex;
+
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px!important;
+    margin-top: 0px;
+    
+  
+    position: static;
+    width: 77px;
+    height: 40px;
+    left: 20px;
+    top: 20px;
+
+    
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--White)!important;
+}
+.btn:disabled {
+    opacity: 0.5;
+}
+.btn:hover {
+    background: var(--B-H);
+    color: var(--White);
+}
+
+/* iconos */
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+#Shop {
+   padding-top: 0%;
+   padding-bottom: 30%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background: var(--Bg);
+    padding: 20px;
+}
+
+/* tipografía */
+
+.Texto-1-Banner {
+    font-size: 25px;
+    font-weight: bold;
+    font-weight: 600;
+    color: var(--White);
+    text-align: center;
+    position:absolute;
+    top:28%;
+    left:20%;
+    right: 20%;
+    bottom: 25%;
+
+}
+
+.Headline-1{
+    font-size: 28px;
+    font-style: normal;
+    line-height: 42px;
+    font-weight: bold;
+    font-weight: 600;
+    color: var(--White);  
+}
+
+.Headline-2 {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.Titulo-3{
+    font-style: normal;
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: bold;
+    color: var(--Black);
+
+}
+
+.Headline-3 {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.Body-1-Bold {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.Body-1-Regular {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.Body-2-Bold {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.Body-2-Regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark-text);
+    font-weight: 400;
+}
+
+.Caption-Bold {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--purple);
+}
+
+.Caption-SemiBold {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.Caption-Regular {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray-text);
+}
+
+/*carrito__item*/
+
+.carrito__item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    width: 70%;
+    margin: 2rem auto;
+    margin-left:0px;
+    margin-top: 0px;
+}
+.carrito__item div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrito__item div span{
+    cursor: pointer;
+}
+.carrito__item img{
+    width: 5rem;
+}
+.carrito__item h3{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+.carrito__item .price{
+    color: var(--Black);
+    margin-left: 0px!important;
+    font-size: 15px;
+    font-weight: 700;
+}
+.carrito__item .remove__item{
+    cursor: pointer;
+    color: var(--rojo);
+    font-size: 4rem;
+}
+
+#plus-min{
+    margin-left:250%;
+}
+
+.carrito__total{
+    color: var(--White)!important;
+    position: absolute;
+    margin-top: -6px!important;
+    font-size: 10px!important;
+}
+
+.carrito__total1{
+    color: var(--White)!important;
+    background-color: var(--B-H)!important;
+    position: absolute;
+    margin-top: 5px!important;
+    padding-top: 5px;
+    font-size: 10px!important;
+    height:25px;
+    width:25px;
+    margin-left:-80px;
+    
+}
+
+#cartT3{
+    color: var(--White);
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: medium;
+}
+
+#cartT2{
+    margin-left: -60px;
+}
+
+
+
+
+
+

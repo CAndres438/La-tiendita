@@ -1,0 +1,269 @@
+/*Para secciones de ShowData*/
+
+body{
+    background-color: var(--Boulder);
+    min-width: 500px;
+}
+.section-offers{
+    margin: 20px 0px;
+    padding: 20px;
+    margin-top: 0px;
+    background-color:var(--Bg);
+}
+.section-populars {
+    margin: 20px 0px;
+    padding: 20px;
+    margin-top: -20px;
+    background-color:var(--Bg);
+    
+}
+
+.container-offers, .container-populars{
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 16px;
+    overflow-x: scroll;
+    box-shadow: 0px 10px 5px rgb(202, 198, 198);
+}
+
+.cards-container {
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    position: static;
+}
+
+.card .prices {
+    display: flex;
+    flex-direction: row;
+}
+
+.card .prices-Net {
+    display: inline;
+    text-decoration: line-through;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+
+
+p.Normal-1.prices-Net{
+    text-decoration: line-through;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+
+/* header  */
+
+header {
+    background: var(--white);
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.container-nav {
+    height: 50px;
+    display: inline-block;
+}
+
+.container-botones-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar select {
+    border: none;
+}
+
+.navbar span {
+    color: #db4500;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* ---------carrito---------- */
+
+#offcanvasRight{
+    width: 640px;
+}
+
+
+#offcanvasRightLabel, 
+#textUbicacionCarrito {
+    display: inline-block;
+    font-weight: 600;
+    font-size: larger;
+}
+
+#btn-carrito-agregar {
+    width: 150px;
+}
+
+#contenido-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-carrito-vacio {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.info-carrito-vacio {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.modal-footer-carrito {
+    justify-content: space-between;
+}
+
+
+
+/* detalles de productos */
+
+.modal-detalles {
+    position: fixed;
+}
+
+.text-detalle-producto {
+    color: var(--cocoa-brown);
+}
+
+.detalle-producto, .opciones-compra {
+    display: flex;
+    flex-direction: row;
+}
+
+.detalle-producto .img-detalle {
+    width: 300px;
+    padding: 20px;
+}
+
+.cont-texto-detalle {
+    padding: 20px; 
+}
+
+.cont-texto-detalle .precios-detalle-producto {
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p.Body-1-Regular.precio-sin-descuento {
+    text-decoration: line-through;
+}
+
+.madurez-producto {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+
+.opciones-compra {
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contenedor-seleccion-cantidad {
+    text-align: center;
+    box-shadow: #C4C4C4;
+    width: 40%;
+    border-radius: 16px;
+    padding: 2px;
+    height: 100%;
+    
+}
+
+.contenedor-seleccion-cantidad input {
+    width: 50px;
+    background: none;
+    padding: 0;
+    text-align: center;
+    border: none;
+}
+
+.contenedor-seleccion-cantidad p {
+    display: inline;
+}
+
+.btnAumentar, .btnDisminuir {
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.btnAumentar:hover, .btnDisminuir:hover {
+    opacity: 0.5;
+}
+
+
+.opciones-compra .btn {
+    width: 50%;
+}
+
+.banner {
+    border-radius: 16px;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.texto-banner img{
+    width: 100% ;
+    height: 250px;
+    min-width: 200px;
+    margin-top:0px;
+} 
+
+#btnVaciarCarrito{
+    background-color: var(--White);
+    border-color: var(--White);
+    color: var(--Silver);
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size:medium;
+    border:none;
+}
+
+
+#btn-carrito-agregar{
+    width:80%;
+    text-align: center;
+    padding-top:6px!important;
+}
+
+#btnPagar{
+        width: 320px;
+        padding-top: 0px!important;
+        min-width: 250px;
+        font-size: larger;
+    }
+
+#badgeBtnCarrito{
+    background-color: #db4500;
+    margin-left: -50px!important;
+}
+
+
+
+
+

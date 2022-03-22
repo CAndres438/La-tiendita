@@ -1,0 +1,20 @@
+body{
+    background-color: var(--Silverr);
+}
+.contenido-carrito-pagar {
+    background: var(--White);
+    border-radius: 16px;
+    position:relative;
+    box-shadow: 0px 10px 5px rgb(202, 198, 198);
+}
+
+#na{
+    background-color: var(--Silverr);
+}
+
+#cartT4{
+    margin-right: 70px;
+    font-size: larger;
+    font-weight: 400;
+}
+

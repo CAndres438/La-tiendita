@@ -55,7 +55,9 @@ const showCarrito = () => {
             </div>
             `;
             document.getElementById('rein').addEventListener("click", () => {
-                carritoVacio.innerHTML = "";})
+                carritoVacio.innerHTML = "";
+                alert1.innerHTML="";
+            })
         });
     }
 };

@@ -86,7 +86,7 @@ const getLocalStorage = () => {
         carritoTotal.innerText = `${listaCarrito.length}`;
         carritoTotal2.innerText= `${listaCarrito.length}`;  
         alert1.innerHTML+=`<div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
+        Producto añadido al carrito!
       </div>`
         carritoTotal3.innerText= `${formatoCOP.format(prices.reduce(reducer))}`
 
@@ -139,6 +139,8 @@ const getLocalStorage = () => {
             
             carritoTotal.innerText = `${listaCarrito.length}`;
             carritoTotal2.innerText= `${listaCarrito.length}`;  
+            alert1.innerHTML+=`<div class="alert alert-primary" role="alert">
+            Producto añadido al carrito!`
             carritoTotal3.innerText= `${formatoCOP.format(prices.reduce(reducer))}`
         })  
   }

@@ -1,0 +1,2 @@
+# La-tiendita
+Comercio minorista.

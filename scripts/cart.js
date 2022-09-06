@@ -16,7 +16,7 @@ const showCarrito = () => {
 
         carritoVacio.innerHTML = `
         <div class="imagen-carrito-vacio" id="pro">
-            <img src="https://res.cloudinary.com/daalu/image/upload/v1647466416/Recursos.Fresh/RecursosDaalu/FVS_gx3npz.png" alt="carrito vacio">
+            <img src="https://res.cloudinary.com/cortiz/image/upload/v1647466416/Recursos.Fresh/RecursosDaalu/FVS_gx3npz.png" alt="carrito vacio">
         </div>
         <div class="info-carrito-vacio" id="mon">
             <h3 class="Titulo-3">Tu canasta está vacía</h3>
